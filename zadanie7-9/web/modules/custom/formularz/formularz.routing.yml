@@ -1,0 +1,7 @@
+formularz.form:
+  path: '/formularz'
+  defaults:
+    _form: 'Drupal\formularz\Form\Formularz'
+    _title: 'Formularz'
+  requirements:
+    _permission: 'access content'

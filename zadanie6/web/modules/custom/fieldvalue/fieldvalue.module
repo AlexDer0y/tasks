@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains fieldvalue.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function fieldvalue_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the fieldvalue module.
+    case 'help.page.fieldvalue':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Field formatter plugin - custom by AL') . '</p>';
+      return $output;
+
+    default:
+  }
+}
