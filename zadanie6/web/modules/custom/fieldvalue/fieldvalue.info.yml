@@ -1,6 +1,0 @@
-name: 'Field Value Formatter - sqrt'
-description: 'Field formatter plugin module for recruitment task: replaces field value with its sqrt value.'
-package: 'Recruitment Tasks'
-type: module
-version: 1.0
-core_version_requirement: ^9.0

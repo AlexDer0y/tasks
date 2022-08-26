@@ -1,0 +1,6 @@
+name: 'Field Squarer'
+type: module
+description: 'Squares up the current field value upon saving, for certain entity type'
+core_version_requirement: ^9.0
+version: 1.0
+package: 'Recruitment Tasks'

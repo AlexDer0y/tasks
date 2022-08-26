@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Contains fieldsquarer.module.
+ */
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function fieldsquarer_node_presave(\Drupal\Core\Entity\EntityInterface $entity) {
+            
+    // Checking if entity is of certain type.
+    if ($entity->bundle() == 'test_content') {
+            
+        // Getting current field value from entity.
+        $field_square = $entity->field_square->value;
+
+        // Calculating new field value.
+        $field_square = $field_square ** 2;
+
+        // Updating field value to be saved.
+        $entity->field_square->value = $field_square;
+    }
+}
+
