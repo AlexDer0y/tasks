@@ -1,16 +1,14 @@
 <?php
 
-$ciagCaly = "Zdanie do sprawdzenia.";
-$ciagSzukany = "dan";
+$stringToCheck = "Zdanie do sprawdzenia.";
+$searchedString = "Zda";
 
-if(strpos($ciagCaly, $ciagSzukany)==TRUE) {
-	$nrPozycji = strpos($ciagCaly, $ciagSzukany) + 1; // zakładamy że pierwsza litera ma numer 1, a nie 0
+if(strpos($stringToCheck, $searchedString)!==FALSE) {
+	$position = strpos($stringToCheck, $searchedString) + 1; // zakładamy że pierwsza litera ma numer 1, a nie 0
 
-	echo "Ciąg: <b>$ciagSzukany</b> znajduje sie w ciągu: <b>$ciagCaly</b> i zaczyna się na pozycji nr: <b>$nrPozycji</b>";
+	echo "Ciąg: <b>$searchedString</b> znajduje sie w ciągu: <b>$stringToCheck</b> i zaczyna się na pozycji nr: <b>$position</b>";
 }
 else 
 	echo "Brak szukanego ciągu w tym przykładzie.";
 
 echo "<br><br>";
-
-?>
