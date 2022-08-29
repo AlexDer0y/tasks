@@ -2,20 +2,18 @@
 
 /**
  * @file
- * Contains \Drupal\formularz\Form\Formularz
+ * Contains \Drupal\formularz\Form\WelcomeForm
  */
 
 namespace Drupal\formularz\Form;
 
-// use Drupal\Core\Database\Database;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
-// use Drupal\Core\Render\Element\Hidden;
 
 /**
- * Setting up a form for 'hello message'   
+ * Sets up a welcoming message form. 
  */
-class Formularz extends FormBase
+class WelcomeForm extends FormBase
 {
     /**
      * (@inheritdoc)
@@ -30,8 +28,6 @@ class Formularz extends FormBase
      */
     public function buildForm(array $form, FormStateInterface $form_state)
     {
-        // $node = \Drupal::routeMatch()->getParameter('node');
-        // $nid = $node->nid->value;
 
         $form['name'] = array(
             '#title' => "Podaj swoje imię:",
@@ -56,6 +52,10 @@ class Formularz extends FormBase
 
         return $form;
     }
+
+    /**
+     * (@inheritdoc)
+     */
     public function submitForm(array &$form, FormStateInterface $form_state)
     {
 
