@@ -1,7 +1,7 @@
 formularz.form:
   path: '/formularz'
   defaults:
-    _form: 'Drupal\formularz\Form\Formularz'
-    _title: 'Formularz'
+    _controller:  'Drupal\formularz\Controller\FormController::content'
+    _title: 'Formularz powitalny'
   requirements:
     _permission: 'access content'
